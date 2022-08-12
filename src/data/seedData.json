@@ -1,0 +1,95 @@
+{
+  "component": "page",
+  "id": "32aeead5-f064-4662-9e5a-97e3ecea6953",
+  "content": [
+    {
+      "component": "full-width-layout",
+      "id": "8274bedb-9b8f-4b81-ad7a-90304d82f1e3",
+      "bloks": [
+        {
+          "component": "banner",
+          "id": "4eda6cda-0222-4855-a045-f88f529fa8a7",
+          "textSize": "14",
+          "bgImageSrc": "//a.storyblok.com/f/51678/1080x764/db709dacc9/pmab-peru-machu-picchu-4.jpg",
+          "fragmentBloks": [
+            {
+              "component": "title-fragment",
+              "id": "d0db2ad3-54fe-4160-9c02-eef83d44c806",
+              "text": "Welcome to EF Ultimate Break",
+              "level": "1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "component": "fifty-fity-layout",
+      "id": "625bcdf7-2e08-42cd-ac85-b8a6eca852f6",
+      "contentLeft": [
+        {
+          "component": "lead-form",
+          "id": "5f2f35ad-5a2c-4f9f-854a-49cb228effda",
+          "header": "Travel with us!"
+        }
+      ],
+      "contentRight": [
+        {
+          "component": "image",
+          "id": "b6c1da2b-d880-4e94-beeb-76cd0f21b8db",
+          "alt": "",
+          "src": "//a.storyblok.com/f/51678/401x401/2e24afa8b6/400-2x.png",
+          "caption": "Wow we've got this great deal!"
+        }
+      ]
+    },
+    {
+      "component": "full-width-layout",
+      "id": "e1f75e44-0beb-4086-a390-33291b2559ac",
+      "bloks": [
+        {
+          "component": "slider",
+          "id": "e597d3b8-0837-4210-aa53-fe82f9da2b64"
+        },
+        {
+          "component": "trip-finder-quiz",
+          "id": "c9e58c44-5fd3-46c0-8b7a-7bbc67f2b8ea",
+          "content": "# Find a trip…"
+        },
+        {
+          "component": "sliderm",
+          "id": "d0566c42-4636-4a12-82dd-ce4f36713423"
+        }
+      ]
+    },
+    {
+      "component": "full-width-layout",
+      "id": "4a145def-7229-40a6-90c7-2da60b51afe7",
+      "bloks": [
+        {
+          "component": "rich-text",
+          "id": "c92454a0-cb8a-4b82-b596-707d17e17764",
+          "text": "Food truck tousled photo booth."
+        }
+      ]
+    },
+    {
+      "component": "full-width-layout",
+      "id": "9753a324-7f46-4e8d-8f42-0a0aff338831",
+      "bloks": [
+        {
+          "component": "banner",
+          "id": "bb8da1f3-2a51-422a-9d31-0339709e60fd",
+          "bgImageSrc": "//a.storyblok.com/f/51678/2000x1106/2ebb8cc0e0/2018_lapb_paris-3.jpg",
+          "fragmentBloks": [
+            {
+              "component": "title-fragment",
+              "id": "5813983f-378f-4441-a7b5-3be36b7e2d35",
+              "text": "I'm lazy loaded",
+              "level": "1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
