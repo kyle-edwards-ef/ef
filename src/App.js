@@ -20,6 +20,18 @@ function hasImage(arr) {
   return arr.some((b) => imageComponentsList.includes(b.component));
 }
 
+/// utility to display result
+function displayResult(c) {
+  let { id, component } = c;
+  return (
+    <div key={id} className="column">
+      <p>{component}</p>
+      <p>{id}</p>
+      <hr />
+    </div>
+  );
+}
+
 function App() {
   let [pageData, setPageData] = useState({});
   let [pageImgComps, setPageImgComps] = useState([]);
@@ -66,7 +78,6 @@ function App() {
     setTimeout(() => {
       setLazyComponents(pageImgComps.slice(maxEagerImages));
     }, 1200);
-    console.count();
     return () => {};
   }, [pageImgComps]);
 
@@ -79,33 +90,16 @@ function App() {
 
       <h2>Eager Image Components</h2>
       <div>
-        {eagerComponents.length &&
-          eagerComponents.map((ec) => {
-            return (
-              <div key={ec.id} className="column">
-                <p>{ec.component}</p>
-                <p>{ec.id}</p>
-                <hr />
-              </div>
-            );
-          })}
+        {eagerComponents.length ? (
+          eagerComponents.map(displayResult)
+        ) : (
+          <p>---</p>
+        )}
       </div>
 
       <h2>Lazy Image Components</h2>
       <div>
-        {lazyComponents.length ? (
-          lazyComponents.map((lc) => {
-            return (
-              <div key={lc.id} className="column">
-                <p>{lc.component}</p>
-                <p>{lc.id}</p>
-                <hr />
-              </div>
-            );
-          })
-        ) : (
-          <p>-</p>
-        )}
+        {lazyComponents.length ? lazyComponents.map(displayResult) : <p>---</p>}
       </div>
     </div>
   );
