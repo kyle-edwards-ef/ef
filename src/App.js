@@ -31,7 +31,7 @@ function App() {
     setPageData(seed);
     let allComponents = seed.content.map((c) => c);
 
-    /// HOLS
+    /// init image containing components
     let imgComps = [];
 
     /// iterate over each component in content
@@ -72,44 +72,41 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>
-          This page has {pageData.content && pageData.content.length} elements
-        </h1>
+      <h1>
+        This page has {pageData.content && pageData.content.length} top level
+        components
+      </h1>
 
-        <h2>Eager Image Components</h2>
-        <div>
-          {eagerComponents.length &&
-            eagerComponents.map((ec) => {
-              return (
-                <div key={ec.id} className="column">
-                  <p>{ec.component}</p>
-                  <p>{ec.id}</p>
-                  <hr />
-                </div>
-              );
-            })}
-        </div>
+      <h2>Eager Image Components</h2>
+      <div>
+        {eagerComponents.length &&
+          eagerComponents.map((ec) => {
+            return (
+              <div key={ec.id} className="column">
+                <p>{ec.component}</p>
+                <p>{ec.id}</p>
+                <hr />
+              </div>
+            );
+          })}
+      </div>
 
-        <h2>Lazy Image Components</h2>
-        <div>
-          {lazyComponents.length ? (
-            lazyComponents.map((lc) => {
-              return (
-                <div key={lc.id} className="column">
-                  <p>{lc.component}</p>
-                  <p>{lc.id}</p>
-                  <hr />
-                </div>
-              );
-            })
-          ) : (
-            <p>-</p>
-          )}
-        </div>
-
-        <h2>{}</h2>
-      </header>
+      <h2>Lazy Image Components</h2>
+      <div>
+        {lazyComponents.length ? (
+          lazyComponents.map((lc) => {
+            return (
+              <div key={lc.id} className="column">
+                <p>{lc.component}</p>
+                <p>{lc.id}</p>
+                <hr />
+              </div>
+            );
+          })
+        ) : (
+          <p>-</p>
+        )}
+      </div>
     </div>
   );
 }
